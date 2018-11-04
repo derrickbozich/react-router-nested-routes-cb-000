@@ -3,7 +3,7 @@ import { Link, Route } from 'react-router-dom';
 
 const MoviesList = ({movies}) => {
   const moviesList = movies.map(({id, title}) => {
-    return <li><Link to={`/movies/${id}} >${title}`}</Link></li>
+    return <li><Link to={`/movies/${id}`}></Link></li>
   })
   return(
     <div>
