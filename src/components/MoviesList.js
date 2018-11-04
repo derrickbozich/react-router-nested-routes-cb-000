@@ -2,7 +2,7 @@ import React from 'react'
 
 const MoviesList = ({movies}) => {
   const moviesList = movies.map(({id, title}) => {
-    <li><Link to={/movies/`${id}`} >`${title}`</Link></li>
+    return <li><Link to={/movies/`${id}`} >`${title}`</Link></li>
   })
   return(
     <div>
