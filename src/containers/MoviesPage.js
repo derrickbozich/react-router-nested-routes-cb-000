@@ -2,10 +2,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import MoviesList from '../components/MoviesList';
+import Movie from '../components/MoviesList';
 
-const MoviesPage = ({ movies }) => 
+const MoviesPage = ({ movies }) =>
   <div>
     <MoviesList movies={movies} />
+    <Route path{`/movies/:movieId`} component={Movie}
   </div>;
 
 const mapStateToProps = (state) => {
