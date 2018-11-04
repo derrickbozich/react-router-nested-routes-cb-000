@@ -6,7 +6,6 @@ import Movie from '../components/MoviesList';
 import { Link, Route } from 'react-router-dom';
 
 const MoviesPage = ({ match, movies }) =>
-  debugger
   <div>
     <MoviesList movies={movies} />
     <Route path={`/movies/:movieId`} component={Movie} />
