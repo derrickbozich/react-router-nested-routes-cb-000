@@ -7,6 +7,9 @@ const MoviesList = ({movies}) => {
   return(
     <div>
       <h1>Movies List</h1>
+      <ul>
+        {moviesList}
+      </ul>
     </div>
   )
 }
