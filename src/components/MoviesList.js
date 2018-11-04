@@ -21,7 +21,7 @@ const MoviesList = ({match, movies}) => {
       <ul>
         {moviesList}
       </ul>
-      <Route path={`${match.path}/:subId`} component={Sub} />
+    
     </div>
   )
 }
