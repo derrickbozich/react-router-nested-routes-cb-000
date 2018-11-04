@@ -1,14 +1,11 @@
 import React from 'react'
 import { Link, Route } from 'react-router-dom';
 
-const MoviesList = ({ movies}) => {
+const MoviesList = ({match, movies}) => {
 
-  let moviesList;
-  if (movies !== undefined) {
-    moviesList = movies.map(({id, title}) => {
-      return <li key={id}><Link to={`/movies/${id}`}> {title}</Link></li>
-    })
-  }
+  const moviesList = movies.map(({id, title}) => {
+    return <li key={id}><Link to={`/movies/${id}`}> {title}</Link></li>
+  })
 
   return(
     <div>
