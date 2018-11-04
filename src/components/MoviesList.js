@@ -10,7 +10,7 @@ const Sub = () => {
 }
 
 const MoviesList = ({match, movies}) => {
-
+  debugger
   const moviesList = movies.map(({id, title}) => {
     return <li key={id}><Link to={`/movies/${id}`}> {title}</Link></li>
   })
@@ -21,7 +21,7 @@ const MoviesList = ({match, movies}) => {
       <ul>
         {moviesList}
       </ul>
-    
+
     </div>
   )
 }
