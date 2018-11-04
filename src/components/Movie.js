@@ -7,6 +7,7 @@ const Movie = ({match}) => {
     <div>
       <h1>Movie Component</h1>
       <Link to={`${match.url}/new_route`}> New Route </Link>
+      <Route path={`${match.path}/:subId`} component={Sub} />
     </div>
   )
 }
