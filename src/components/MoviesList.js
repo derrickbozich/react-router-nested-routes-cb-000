@@ -1,6 +1,6 @@
 import React from 'react'
 
-const MoviesList = {movies} => {
+const MoviesList = ({movies}) => {
   debugger
   return(
     <div>
