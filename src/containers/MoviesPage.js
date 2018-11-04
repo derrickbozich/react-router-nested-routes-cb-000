@@ -2,7 +2,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import MoviesList from '../components/MoviesList';
-import Movie from '../components/MoviesList';
+import Movie from '../components/Movie';
 import { Link, Route } from 'react-router-dom';
 
 const MoviesPage = ({ match, movies }) =>
@@ -10,7 +10,7 @@ const MoviesPage = ({ match, movies }) =>
     <MoviesList movies={movies} />
     <Route path={`${match.url}/:movieId`} component={Movie} />
     <Route exact path={match.url} render={() => (
-      <h3>Please select a Movie from the list. {match.url}</h3>
+      <h3>Please select a Movie from the list.</h3>
     )}/>
   </div>;
 
