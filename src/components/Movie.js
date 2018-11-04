@@ -1,6 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
+const Sub = () => {
+  return(
+    <div>
+      <h1>Sub Component</h1>
+    </div>
+  )
+}
+
 
 const Movie = ({match}) => {
   return(
