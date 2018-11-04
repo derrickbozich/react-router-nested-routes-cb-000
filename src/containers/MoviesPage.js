@@ -3,6 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import MoviesList from '../components/MoviesList';
 import Movie from '../components/MoviesList';
+import { Link, Route } from 'react-router-dom';
 
 const MoviesPage = ({ movies }) =>
   <div>
