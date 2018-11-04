@@ -7,7 +7,7 @@ import Movie from '../components/MoviesList';
 const MoviesPage = ({ movies }) =>
   <div>
     <MoviesList movies={movies} />
-    <Route path{`/movies/:movieId`} component={Movie}
+    <Route path={`/movies/:movieId`} component={Movie}
   </div>;
 
 const mapStateToProps = (state) => {
