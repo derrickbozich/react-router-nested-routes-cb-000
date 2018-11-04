@@ -8,7 +8,7 @@ import { Link, Route } from 'react-router-dom';
 const MoviesPage = ({ match, movies }) =>
   <div>
     <MoviesList movies={movies} />
-    <Route path={`/movies/:movieId`} component={Movie} />
+    <Route path={`${match.url}/:movieId`} component={Movie} />
   </div>;
 
 const mapStateToProps = (state) => {
