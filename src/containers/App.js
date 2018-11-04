@@ -13,7 +13,7 @@ class App extends Component {
         <div>
           <NavBar />
           <Route exact path="/" render={() => <div>Home</div>} />
-          <Route exact path='/movies' component={MoviesPage}/>
+          <Route path='/movies' component={MoviesPage}/>
         </div>
       </Router>
     );
